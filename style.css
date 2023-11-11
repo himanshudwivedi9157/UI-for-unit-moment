@@ -1,0 +1,270 @@
+* {
+    padding: 0px;
+    margin: 0px;
+  }
+
+  body {
+    background-color: rgb(250, 250, 250);
+  }
+
+  .container {
+    width: 80%;
+    margin: auto;
+    height: auto;
+    /* border: 2px solid red; */
+    background-color: rgb(244, 244, 247);
+  }
+
+  .top {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* border: 2px solid green; */
+    padding: 20px 0px 20px 0px;
+
+  }
+
+  .top>div>div {
+    /* display: flex; */
+    display: grid;
+    grid-template-columns: repeat(2, 1Fr);
+    grid-template-rows: auto;
+    /* gap: 20px; */
+
+  }
+
+  .top>div>div>div {
+    background-color: white;
+    margin: 10px;
+    padding: 10px 100px 50px 10px;
+    border-radius: 20px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  }
+
+  
+
+  .top>div>button {
+    padding: 10px 30px 10px 30px;
+    background-color: green;
+    border: none;
+    /* font-weight: bold; */
+    color: white;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+
+  .top>div>p {
+    font-weight: 35px;
+    font-size: 20px;
+    margin-top: 20px;
+  }
+
+  .mid {
+    /* border: 2px solid gold; */
+    text-align: center;
+  }
+
+  .mid>h2 {
+
+    font-weight: bold;
+  }
+
+  .mid>div {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    /* border: 2px solid red; */
+    gap: 50px;
+
+  }
+
+  .mid>div img {
+    width: 100%;
+    margin: 20px 0px 20px 0px;
+  }
+
+  .bottom>div {
+    display: grid;
+    grid-template-columns: repeat(3, 1Fr);
+    grid-template-rows: repeat(2, 1Fr);
+    gap: 20px;
+    padding: 20px 0px 50px 0px;
+  }
+
+  .bottom {
+    background-color: rgb(220, 244, 244);
+    /* border: 2px solid green; */
+    width: 85%;
+    margin: auto;
+    text-align: center;
+    margin-top: 50px;
+    border-radius: 5px;
+  }
+
+  .bottom>h1 {
+    padding-top: 50px;
+
+  }
+
+  .bottom button {
+    padding: 10px 40px 10px 40px;
+    background-color: green;
+    border: none;
+    /* font-weight: bold; */
+    color: white;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+  }
+
+  .info {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    background-color: #2bb788;
+    height: auto;
+    /* border: 2px solid green; */
+    border-radius: 20px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+  }
+
+
+
+  .info>div {
+    /* border: 1px solid yellow; */
+    padding: 100px 0px 0px 50px;
+
+  }
+
+  .info>div>p {
+    padding: 20px 0px 20px 0px;
+  }
+
+  .info>div>button {
+    padding: 20px 50px 20px 50px;
+    text-align: center;
+    font-weight: bold;
+    border: none;
+    background-color: white;
+  }
+
+  .info img {
+    padding-top: 50px;
+    width: 80%;
+    height: 450px;
+  }
+
+  @media screen and (min-width: 701px) and (max-width: 1000px) {
+    /* Here Write all the necessary styles for Medium Screen size */
+    .top {
+  display: block;
+  text-align: center;
+}
+
+.top > div > div {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+.bottom>div {
+    display: grid;
+    grid-template-columns: repeat(2, 1Fr);
+    grid-template-rows: repeat(3, 1Fr);
+    gap: 20px;
+    padding: 20px 0px 50px 0px;
+  }   
+  .info {
+    width: 85%;
+    margin: auto;
+    display: block;
+    background-color: #2bb788;
+    height: auto;
+    /* border: 2px solid green; */
+    border-radius: 20px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    text-align: center;
+  }
+
+  }
+
+  
+
+  @media screen and (min-width:100px) and (max-width:700px) {
+/* Here Write all the necessery styles for Small Screen size  */
+.top {
+  display: block;
+  text-align: center;
+}
+
+.top > div > div {
+  display: grid;
+  grid-template-columns: repeat(2, 1Fr); /* Single column for small screens */
+ gap: 0px;
+ 
+}
+
+/* .top > div > div > div {
+  width: 100px;
+} */
+.container{
+  width: 100%;
+}
+
+.mid>div {
+    /* width: 85%;
+    margin: auto; */
+    display: block;
+    /* border: 2px solid red; */
+    gap: 20px;
+
+  }
+  .info {
+    width: 100%;
+    margin: auto;
+    display: block;
+    background-color: #2bb788;
+    height: auto;
+    /* border: 2px solid green; */
+    border-radius: 20px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    text-align: center;
+  }
+ .bottom{
+  width: 100%;
+ } 
+.bottom>div {
+    display: grid;
+    grid-template-columns: repeat(1, 1Fr);
+    grid-template-rows: auto;
+    gap: 20px;
+    padding: 20px 0px 50px 0px;
+  }   
+
+
+
+  .info>div {
+    /* border: 1px solid yellow; */
+    padding: 30px 0px 0px 0px;
+text-align: center;
+  }
+
+.info > div > p{
+padding: 20px 20px 20px 20px;
+text-align: justify;
+}
+
+  .bottom button {
+    padding: 10px 20px 10px 20px;
+    background-color: green;
+    border: none;
+    /* font-weight: bold; */
+    color: white;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+  }
+
+  }
